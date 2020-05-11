@@ -45,18 +45,18 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  // Minify HTML output
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-    if (outputPath.indexOf(".html") > -1) {
-      let minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-    return content;
-  });
+  // // Minify HTML output
+  // eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  //   if (outputPath.indexOf(".html") > -1) {
+  //     let minified = htmlmin.minify(content, {
+  //       useShortDoctype: true,
+  //       removeComments: true,
+  //       collapseWhitespace: true
+  //     });
+  //     return minified;
+  //   }
+  //   return content;
+  // });
 
   // Universal slug filter strips unsafe chars from URLs
   eleventyConfig.addFilter("slugify", function(str) {
