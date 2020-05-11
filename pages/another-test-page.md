@@ -1,7 +1,7 @@
 ---
 title: Another Test Page
 date: 2020-05-11T01:13:33.594Z
-permalink: test-page
+permalink: /test-page/index.html
 eleventyNavigation:
   order: 4
   key: test-page
